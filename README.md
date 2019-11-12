@@ -24,7 +24,7 @@ ViewState MVVM uses separate ViewModels for each View (if required). Instead of 
 
 ## Author
 
-QBChat is created with ❤️ by [QuickBird Studios](https://quickbirdstudios.com).
+SwiftUI-Architectures is created with ❤️ by [QuickBird Studios](https://quickbirdstudios.com).
 
 To get more information on the different app architectures check out [our blog post](https://quickbirdstudios.com/blog/swiftui-architecture-redux-mvvm/).
 
