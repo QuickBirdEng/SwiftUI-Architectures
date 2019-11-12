@@ -1,7 +1,7 @@
 # SwiftUI Architectures: Model-View, Redux & ViewState MVVM
 
 This repository contains implementations of a simple chat client called QBChat. Each implementation uses SwiftUI while applying a different architecture (Model-View, Redux & ViewState MVVM). 
-More explanation about each SwiftUI architecture example can be found in [this blog article](ttps://quickbirdstudios.com/blog/swiftui-architecture-redux-mvvm/). 
+More explanation about each SwiftUI architecture example can be found in [this blog article](https://quickbirdstudios.com/blog/swiftui-architecture-redux-mvvm/). 
 Currently, QBChat is implemented using the following app architectures:
 
 ### Model-View
@@ -26,7 +26,7 @@ ViewState MVVM uses separate ViewModels for each View (if required). Instead of 
 
 QBChat is created with ❤️ by [QuickBird Studios](https://quickbirdstudios.com).
 
-To get more information on the different app architectures check out [our blog post](ttps://quickbirdstudios.com/blog/swiftui-architecture-redux-mvvm/).
+To get more information on the different app architectures check out [our blog post](https://quickbirdstudios.com/blog/swiftui-architecture-redux-mvvm/).
 
 ## Contributing
 
