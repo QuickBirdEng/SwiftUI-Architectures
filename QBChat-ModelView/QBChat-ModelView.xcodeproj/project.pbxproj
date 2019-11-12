@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B26000A2369EEC000139826 /* QBChat_ModelViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600092369EEC000139826 /* QBChat_ModelViewTests.swift */; };
+		9B2600152369EEC000139826 /* QBChat_ModelViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600142369EEC000139826 /* QBChat_ModelViewUITests.swift */; };
+		9B260049236A0A5D00139826 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260048236A0A5D00139826 /* ChatListView.swift */; };
+		9B26004F236A0ACC00139826 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26004B236A0ACC00139826 /* Chat.swift */; };
+		9B260050236A0ACC00139826 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26004C236A0ACC00139826 /* ChatService.swift */; };
+		9B260051236A0ACC00139826 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26004D236A0ACC00139826 /* Message.swift */; };
+		9B260052236A0ACC00139826 /* MockChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26004E236A0ACC00139826 /* MockChatService.swift */; };
+		9B260057236A0B0600139826 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260054236A0B0600139826 /* MessageView.swift */; };
+		9B260058236A0B0600139826 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260055236A0B0600139826 /* ChatDetailView.swift */; };
+		9B260059236A0B0600139826 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260056236A0B0600139826 /* ChatCell.swift */; };
+		9B26005B236A0BE600139826 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26005A236A0BE600139826 /* KeyboardObserver.swift */; };
+		9B26FFF32369EEBC00139826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26FFF22369EEBC00139826 /* AppDelegate.swift */; };
+		9B26FFF52369EEBC00139826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26FFF42369EEBC00139826 /* SceneDelegate.swift */; };
+		9B26FFF92369EEBF00139826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B26FFF82369EEBF00139826 /* Assets.xcassets */; };
+		9B26FFFC2369EEBF00139826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B26FFFB2369EEBF00139826 /* Preview Assets.xcassets */; };
+		9B26FFFF2369EEBF00139826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B26FFFD2369EEBF00139826 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B2600062369EEC000139826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B26FFE72369EEBC00139826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B26FFEE2369EEBC00139826;
+			remoteInfo = "QBChat-ModelView";
+		};
+		9B2600112369EEC000139826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B26FFE72369EEBC00139826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B26FFEE2369EEBC00139826;
+			remoteInfo = "QBChat-ModelView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B2600002369EEBF00139826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B2600052369EEC000139826 /* QBChat-ModelViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QBChat-ModelViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2600092369EEC000139826 /* QBChat_ModelViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBChat_ModelViewTests.swift; sourceTree = "<group>"; };
+		9B26000B2369EEC000139826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B2600102369EEC000139826 /* QBChat-ModelViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QBChat-ModelViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2600142369EEC000139826 /* QBChat_ModelViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBChat_ModelViewUITests.swift; sourceTree = "<group>"; };
+		9B2600162369EEC000139826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B260048236A0A5D00139826 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		9B26004B236A0ACC00139826 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		9B26004C236A0ACC00139826 /* ChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		9B26004D236A0ACC00139826 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9B26004E236A0ACC00139826 /* MockChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockChatService.swift; sourceTree = "<group>"; };
+		9B260054236A0B0600139826 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		9B260055236A0B0600139826 /* ChatDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		9B260056236A0B0600139826 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		9B26005A236A0BE600139826 /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		9B26FFEF2369EEBC00139826 /* QBChat-ModelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QBChat-ModelView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B26FFF22369EEBC00139826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B26FFF42369EEBC00139826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B26FFF82369EEBF00139826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B26FFFB2369EEBF00139826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B26FFFE2369EEBF00139826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B2600022369EEC000139826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26000D2369EEC000139826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FFEC2369EEBC00139826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B2600082369EEC000139826 /* QBChat-ModelViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B2600092369EEC000139826 /* QBChat_ModelViewTests.swift */,
+				9B26000B2369EEC000139826 /* Info.plist */,
+			);
+			path = "QBChat-ModelViewTests";
+			sourceTree = "<group>";
+		};
+		9B2600132369EEC000139826 /* QBChat-ModelViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B2600142369EEC000139826 /* QBChat_ModelViewUITests.swift */,
+				9B2600162369EEC000139826 /* Info.plist */,
+			);
+			path = "QBChat-ModelViewUITests";
+			sourceTree = "<group>";
+		};
+		9B260047236A0A4B00139826 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FFF22369EEBC00139826 /* AppDelegate.swift */,
+				9B26FFF42369EEBC00139826 /* SceneDelegate.swift */,
+				9B26FFF82369EEBF00139826 /* Assets.xcassets */,
+				9B26FFFD2369EEBF00139826 /* LaunchScreen.storyboard */,
+				9B2600002369EEBF00139826 /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9B26004A236A0A6600139826 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B260048236A0A5D00139826 /* ChatListView.swift */,
+				9B260056236A0B0600139826 /* ChatCell.swift */,
+				9B260055236A0B0600139826 /* ChatDetailView.swift */,
+				9B260054236A0B0600139826 /* MessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B260053236A0AD800139826 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B26004B236A0ACC00139826 /* Chat.swift */,
+				9B26004D236A0ACC00139826 /* Message.swift */,
+				9B26004C236A0ACC00139826 /* ChatService.swift */,
+				9B26004E236A0ACC00139826 /* MockChatService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B26005C236A0BE900139826 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B26005A236A0BE600139826 /* KeyboardObserver.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9B26FFE62369EEBC00139826 = {
+			isa = PBXGroup;
+			children = (
+				9B26FFF12369EEBC00139826 /* QBChat-ModelView */,
+				9B2600082369EEC000139826 /* QBChat-ModelViewTests */,
+				9B2600132369EEC000139826 /* QBChat-ModelViewUITests */,
+				9B26FFF02369EEBC00139826 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B26FFF02369EEBC00139826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FFEF2369EEBC00139826 /* QBChat-ModelView.app */,
+				9B2600052369EEC000139826 /* QBChat-ModelViewTests.xctest */,
+				9B2600102369EEC000139826 /* QBChat-ModelViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B26FFF12369EEBC00139826 /* QBChat-ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				9B260047236A0A4B00139826 /* Common */,
+				9B26004A236A0A6600139826 /* Views */,
+				9B260053236A0AD800139826 /* Model */,
+				9B26005C236A0BE900139826 /* Extension */,
+				9B26FFFA2369EEBF00139826 /* Preview Content */,
+			);
+			path = "QBChat-ModelView";
+			sourceTree = "<group>";
+		};
+		9B26FFFA2369EEBF00139826 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FFFB2369EEBF00139826 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B2600042369EEC000139826 /* QBChat-ModelViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B26001C2369EEC000139826 /* Build configuration list for PBXNativeTarget "QBChat-ModelViewTests" */;
+			buildPhases = (
+				9B2600012369EEC000139826 /* Sources */,
+				9B2600022369EEC000139826 /* Frameworks */,
+				9B2600032369EEC000139826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B2600072369EEC000139826 /* PBXTargetDependency */,
+			);
+			name = "QBChat-ModelViewTests";
+			productName = "QBChat-ModelViewTests";
+			productReference = 9B2600052369EEC000139826 /* QBChat-ModelViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B26000F2369EEC000139826 /* QBChat-ModelViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B26001F2369EEC000139826 /* Build configuration list for PBXNativeTarget "QBChat-ModelViewUITests" */;
+			buildPhases = (
+				9B26000C2369EEC000139826 /* Sources */,
+				9B26000D2369EEC000139826 /* Frameworks */,
+				9B26000E2369EEC000139826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B2600122369EEC000139826 /* PBXTargetDependency */,
+			);
+			name = "QBChat-ModelViewUITests";
+			productName = "QBChat-ModelViewUITests";
+			productReference = 9B2600102369EEC000139826 /* QBChat-ModelViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9B26FFEE2369EEBC00139826 /* QBChat-ModelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B2600192369EEC000139826 /* Build configuration list for PBXNativeTarget "QBChat-ModelView" */;
+			buildPhases = (
+				9B26FFEB2369EEBC00139826 /* Sources */,
+				9B26FFEC2369EEBC00139826 /* Frameworks */,
+				9B26FFED2369EEBC00139826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QBChat-ModelView";
+			productName = "QBChat-ModelView";
+			productReference = 9B26FFEF2369EEBC00139826 /* QBChat-ModelView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B26FFE72369EEBC00139826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "QuickBird Studios";
+				TargetAttributes = {
+					9B2600042369EEC000139826 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9B26FFEE2369EEBC00139826;
+					};
+					9B26000F2369EEC000139826 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9B26FFEE2369EEBC00139826;
+					};
+					9B26FFEE2369EEBC00139826 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B26FFEA2369EEBC00139826 /* Build configuration list for PBXProject "QBChat-ModelView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B26FFE62369EEBC00139826;
+			productRefGroup = 9B26FFF02369EEBC00139826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B26FFEE2369EEBC00139826 /* QBChat-ModelView */,
+				9B2600042369EEC000139826 /* QBChat-ModelViewTests */,
+				9B26000F2369EEC000139826 /* QBChat-ModelViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B2600032369EEC000139826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26000E2369EEC000139826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FFED2369EEBC00139826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26FFFF2369EEBF00139826 /* LaunchScreen.storyboard in Resources */,
+				9B26FFFC2369EEBF00139826 /* Preview Assets.xcassets in Resources */,
+				9B26FFF92369EEBF00139826 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B2600012369EEC000139826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26000A2369EEC000139826 /* QBChat_ModelViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26000C2369EEC000139826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2600152369EEC000139826 /* QBChat_ModelViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FFEB2369EEBC00139826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26FFF32369EEBC00139826 /* AppDelegate.swift in Sources */,
+				9B26004F236A0ACC00139826 /* Chat.swift in Sources */,
+				9B26005B236A0BE600139826 /* KeyboardObserver.swift in Sources */,
+				9B260052236A0ACC00139826 /* MockChatService.swift in Sources */,
+				9B260059236A0B0600139826 /* ChatCell.swift in Sources */,
+				9B260058236A0B0600139826 /* ChatDetailView.swift in Sources */,
+				9B260049236A0A5D00139826 /* ChatListView.swift in Sources */,
+				9B260057236A0B0600139826 /* MessageView.swift in Sources */,
+				9B260051236A0ACC00139826 /* Message.swift in Sources */,
+				9B260050236A0ACC00139826 /* ChatService.swift in Sources */,
+				9B26FFF52369EEBC00139826 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B2600072369EEC000139826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B26FFEE2369EEBC00139826 /* QBChat-ModelView */;
+			targetProxy = 9B2600062369EEC000139826 /* PBXContainerItemProxy */;
+		};
+		9B2600122369EEC000139826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B26FFEE2369EEBC00139826 /* QBChat-ModelView */;
+			targetProxy = 9B2600112369EEC000139826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B26FFFD2369EEBF00139826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B26FFFE2369EEBF00139826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B2600172369EEC000139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B2600182369EEC000139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B26001A2369EEC000139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QBChat-ModelView/Preview Content\"";
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QBChat-ModelView/Common/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ModelView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B26001B2369EEC000139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QBChat-ModelView/Preview Content\"";
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QBChat-ModelView/Common/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ModelView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B26001D2369EEC000139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ModelViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ModelViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBChat-ModelView.app/QBChat-ModelView";
+			};
+			name = Debug;
+		};
+		9B26001E2369EEC000139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ModelViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ModelViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBChat-ModelView.app/QBChat-ModelView";
+			};
+			name = Release;
+		};
+		9B2600202369EEC000139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ModelViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ModelViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QBChat-ModelView";
+			};
+			name = Debug;
+		};
+		9B2600212369EEC000139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ModelViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ModelViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QBChat-ModelView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B2600192369EEC000139826 /* Build configuration list for PBXNativeTarget "QBChat-ModelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B26001A2369EEC000139826 /* Debug */,
+				9B26001B2369EEC000139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B26001C2369EEC000139826 /* Build configuration list for PBXNativeTarget "QBChat-ModelViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B26001D2369EEC000139826 /* Debug */,
+				9B26001E2369EEC000139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B26001F2369EEC000139826 /* Build configuration list for PBXNativeTarget "QBChat-ModelViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B2600202369EEC000139826 /* Debug */,
+				9B2600212369EEC000139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B26FFEA2369EEBC00139826 /* Build configuration list for PBXProject "QBChat-ModelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B2600172369EEC000139826 /* Debug */,
+				9B2600182369EEC000139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B26FFE72369EEBC00139826 /* Project object */;
+}

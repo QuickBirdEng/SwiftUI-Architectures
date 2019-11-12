@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B2600252369EF1800139826 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600242369EF1800139826 /* ChatListView.swift */; };
+		9B2600272369EF2F00139826 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600262369EF2F00139826 /* ChatDetailView.swift */; };
+		9B2600292369EF3A00139826 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600282369EF3A00139826 /* ChatCell.swift */; };
+		9B26002B2369EF4F00139826 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26002A2369EF4F00139826 /* ChatService.swift */; };
+		9B26002E2369EF6900139826 /* MockChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26002D2369EF6900139826 /* MockChatService.swift */; };
+		9B2600312369EF8B00139826 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600302369EF8B00139826 /* Chat.swift */; };
+		9B2600332369EF9F00139826 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600322369EF9F00139826 /* Message.swift */; };
+		9B2600352369F12A00139826 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600342369F12A00139826 /* Reducer.swift */; };
+		9B2600382369F3E400139826 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2600372369F3E400139826 /* Store.swift */; };
+		9B26003D2369F84900139826 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26003C2369F84900139826 /* AppState.swift */; };
+		9B26003F2369FF8C00139826 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26003E2369FF8C00139826 /* AppAction.swift */; };
+		9B260041236A001A00139826 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260040236A001A00139826 /* AppReducer.swift */; };
+		9B260043236A05D900139826 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260042236A05D900139826 /* MessageView.swift */; };
+		9B260045236A07A300139826 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B260044236A07A300139826 /* KeyboardObserver.swift */; };
+		9B26FF7B2369EDCD00139826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26FF7A2369EDCD00139826 /* AppDelegate.swift */; };
+		9B26FF7D2369EDCD00139826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26FF7C2369EDCD00139826 /* SceneDelegate.swift */; };
+		9B26FF812369EDD400139826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B26FF802369EDD400139826 /* Assets.xcassets */; };
+		9B26FF842369EDD400139826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B26FF832369EDD400139826 /* Preview Assets.xcassets */; };
+		9B26FF872369EDD400139826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B26FF852369EDD400139826 /* LaunchScreen.storyboard */; };
+		9B26FF922369EDD400139826 /* QBChat_ReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26FF912369EDD400139826 /* QBChat_ReduxTests.swift */; };
+		9B26FF9D2369EDD400139826 /* QBChat_ReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26FF9C2369EDD400139826 /* QBChat_ReduxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B26FF8E2369EDD400139826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B26FF6F2369EDCD00139826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B26FF762369EDCD00139826;
+			remoteInfo = "QBChat-Redux";
+		};
+		9B26FF992369EDD400139826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B26FF6F2369EDCD00139826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B26FF762369EDCD00139826;
+			remoteInfo = "QBChat-Redux";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B2600242369EF1800139826 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		9B2600262369EF2F00139826 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		9B2600282369EF3A00139826 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		9B26002A2369EF4F00139826 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		9B26002D2369EF6900139826 /* MockChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChatService.swift; sourceTree = "<group>"; };
+		9B2600302369EF8B00139826 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		9B2600322369EF9F00139826 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9B2600342369F12A00139826 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		9B2600372369F3E400139826 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9B26003C2369F84900139826 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9B26003E2369FF8C00139826 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		9B260040236A001A00139826 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		9B260042236A05D900139826 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		9B260044236A07A300139826 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		9B26FF772369EDCD00139826 /* QBChat-Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QBChat-Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B26FF7A2369EDCD00139826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B26FF7C2369EDCD00139826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B26FF802369EDD400139826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B26FF832369EDD400139826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B26FF862369EDD400139826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B26FF882369EDD400139826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B26FF8D2369EDD400139826 /* QBChat-ReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QBChat-ReduxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B26FF912369EDD400139826 /* QBChat_ReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBChat_ReduxTests.swift; sourceTree = "<group>"; };
+		9B26FF932369EDD400139826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B26FF982369EDD400139826 /* QBChat-ReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QBChat-ReduxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B26FF9C2369EDD400139826 /* QBChat_ReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QBChat_ReduxUITests.swift; sourceTree = "<group>"; };
+		9B26FF9E2369EDD400139826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B26FF742369EDCD00139826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FF8A2369EDD400139826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FF952369EDD400139826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B2600222369EED600139826 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FF7A2369EDCD00139826 /* AppDelegate.swift */,
+				9B26FF7C2369EDCD00139826 /* SceneDelegate.swift */,
+				9B26FF802369EDD400139826 /* Assets.xcassets */,
+				9B26FF852369EDD400139826 /* LaunchScreen.storyboard */,
+				9B26FF882369EDD400139826 /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9B2600232369EEFF00139826 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9B2600242369EF1800139826 /* ChatListView.swift */,
+				9B2600262369EF2F00139826 /* ChatDetailView.swift */,
+				9B260042236A05D900139826 /* MessageView.swift */,
+				9B2600282369EF3A00139826 /* ChatCell.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9B26002C2369EF5500139826 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B2600302369EF8B00139826 /* Chat.swift */,
+				9B2600322369EF9F00139826 /* Message.swift */,
+				9B26002A2369EF4F00139826 /* ChatService.swift */,
+				9B26002D2369EF6900139826 /* MockChatService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B2600392369F51000139826 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9B2600342369F12A00139826 /* Reducer.swift */,
+				9B2600372369F3E400139826 /* Store.swift */,
+				9B26003C2369F84900139826 /* AppState.swift */,
+				9B26003E2369FF8C00139826 /* AppAction.swift */,
+				9B260040236A001A00139826 /* AppReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		9B260046236A07AB00139826 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B260044236A07A300139826 /* KeyboardObserver.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B26FF6E2369EDCD00139826 = {
+			isa = PBXGroup;
+			children = (
+				9B26FF792369EDCD00139826 /* QBChat-Redux */,
+				9B26FF902369EDD400139826 /* QBChat-ReduxTests */,
+				9B26FF9B2369EDD400139826 /* QBChat-ReduxUITests */,
+				9B26FF782369EDCD00139826 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B26FF782369EDCD00139826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FF772369EDCD00139826 /* QBChat-Redux.app */,
+				9B26FF8D2369EDD400139826 /* QBChat-ReduxTests.xctest */,
+				9B26FF982369EDD400139826 /* QBChat-ReduxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B26FF792369EDCD00139826 /* QBChat-Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9B2600222369EED600139826 /* Common */,
+				9B2600392369F51000139826 /* Redux */,
+				9B2600232369EEFF00139826 /* Scenes */,
+				9B26002C2369EF5500139826 /* Model */,
+				9B260046236A07AB00139826 /* Extensions */,
+				9B26FF822369EDD400139826 /* Preview Content */,
+			);
+			path = "QBChat-Redux";
+			sourceTree = "<group>";
+		};
+		9B26FF822369EDD400139826 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FF832369EDD400139826 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B26FF902369EDD400139826 /* QBChat-ReduxTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FF912369EDD400139826 /* QBChat_ReduxTests.swift */,
+				9B26FF932369EDD400139826 /* Info.plist */,
+			);
+			path = "QBChat-ReduxTests";
+			sourceTree = "<group>";
+		};
+		9B26FF9B2369EDD400139826 /* QBChat-ReduxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B26FF9C2369EDD400139826 /* QBChat_ReduxUITests.swift */,
+				9B26FF9E2369EDD400139826 /* Info.plist */,
+			);
+			path = "QBChat-ReduxUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B26FF762369EDCD00139826 /* QBChat-Redux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B26FFA12369EDD400139826 /* Build configuration list for PBXNativeTarget "QBChat-Redux" */;
+			buildPhases = (
+				9B26FF732369EDCD00139826 /* Sources */,
+				9B26FF742369EDCD00139826 /* Frameworks */,
+				9B26FF752369EDCD00139826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QBChat-Redux";
+			productName = "QBChat-Redux";
+			productReference = 9B26FF772369EDCD00139826 /* QBChat-Redux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B26FF8C2369EDD400139826 /* QBChat-ReduxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B26FFA42369EDD400139826 /* Build configuration list for PBXNativeTarget "QBChat-ReduxTests" */;
+			buildPhases = (
+				9B26FF892369EDD400139826 /* Sources */,
+				9B26FF8A2369EDD400139826 /* Frameworks */,
+				9B26FF8B2369EDD400139826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B26FF8F2369EDD400139826 /* PBXTargetDependency */,
+			);
+			name = "QBChat-ReduxTests";
+			productName = "QBChat-ReduxTests";
+			productReference = 9B26FF8D2369EDD400139826 /* QBChat-ReduxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B26FF972369EDD400139826 /* QBChat-ReduxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B26FFA72369EDD400139826 /* Build configuration list for PBXNativeTarget "QBChat-ReduxUITests" */;
+			buildPhases = (
+				9B26FF942369EDD400139826 /* Sources */,
+				9B26FF952369EDD400139826 /* Frameworks */,
+				9B26FF962369EDD400139826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B26FF9A2369EDD400139826 /* PBXTargetDependency */,
+			);
+			name = "QBChat-ReduxUITests";
+			productName = "QBChat-ReduxUITests";
+			productReference = 9B26FF982369EDD400139826 /* QBChat-ReduxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B26FF6F2369EDCD00139826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "QuickBird Studios";
+				TargetAttributes = {
+					9B26FF762369EDCD00139826 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					9B26FF8C2369EDD400139826 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9B26FF762369EDCD00139826;
+					};
+					9B26FF972369EDD400139826 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 9B26FF762369EDCD00139826;
+					};
+				};
+			};
+			buildConfigurationList = 9B26FF722369EDCD00139826 /* Build configuration list for PBXProject "QBChat-Redux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B26FF6E2369EDCD00139826;
+			productRefGroup = 9B26FF782369EDCD00139826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B26FF762369EDCD00139826 /* QBChat-Redux */,
+				9B26FF8C2369EDD400139826 /* QBChat-ReduxTests */,
+				9B26FF972369EDD400139826 /* QBChat-ReduxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B26FF752369EDCD00139826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26FF872369EDD400139826 /* LaunchScreen.storyboard in Resources */,
+				9B26FF842369EDD400139826 /* Preview Assets.xcassets in Resources */,
+				9B26FF812369EDD400139826 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FF8B2369EDD400139826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FF962369EDD400139826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B26FF732369EDCD00139826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26003F2369FF8C00139826 /* AppAction.swift in Sources */,
+				9B2600252369EF1800139826 /* ChatListView.swift in Sources */,
+				9B260041236A001A00139826 /* AppReducer.swift in Sources */,
+				9B2600272369EF2F00139826 /* ChatDetailView.swift in Sources */,
+				9B2600352369F12A00139826 /* Reducer.swift in Sources */,
+				9B26003D2369F84900139826 /* AppState.swift in Sources */,
+				9B26FF7B2369EDCD00139826 /* AppDelegate.swift in Sources */,
+				9B2600332369EF9F00139826 /* Message.swift in Sources */,
+				9B2600292369EF3A00139826 /* ChatCell.swift in Sources */,
+				9B260043236A05D900139826 /* MessageView.swift in Sources */,
+				9B260045236A07A300139826 /* KeyboardObserver.swift in Sources */,
+				9B2600382369F3E400139826 /* Store.swift in Sources */,
+				9B26002E2369EF6900139826 /* MockChatService.swift in Sources */,
+				9B2600312369EF8B00139826 /* Chat.swift in Sources */,
+				9B26FF7D2369EDCD00139826 /* SceneDelegate.swift in Sources */,
+				9B26002B2369EF4F00139826 /* ChatService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FF892369EDD400139826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26FF922369EDD400139826 /* QBChat_ReduxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B26FF942369EDD400139826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B26FF9D2369EDD400139826 /* QBChat_ReduxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B26FF8F2369EDD400139826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B26FF762369EDCD00139826 /* QBChat-Redux */;
+			targetProxy = 9B26FF8E2369EDD400139826 /* PBXContainerItemProxy */;
+		};
+		9B26FF9A2369EDD400139826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B26FF762369EDCD00139826 /* QBChat-Redux */;
+			targetProxy = 9B26FF992369EDD400139826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B26FF852369EDD400139826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B26FF862369EDD400139826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B26FF9F2369EDD400139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B26FFA02369EDD400139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B26FFA22369EDD400139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QBChat-Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QBChat-Redux/Common/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-Redux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B26FFA32369EDD400139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QBChat-Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QBChat-Redux/Common/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-Redux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B26FFA52369EDD400139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ReduxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ReduxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBChat-Redux.app/QBChat-Redux";
+			};
+			name = Debug;
+		};
+		9B26FFA62369EDD400139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ReduxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ReduxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBChat-Redux.app/QBChat-Redux";
+			};
+			name = Release;
+		};
+		9B26FFA82369EDD400139826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ReduxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ReduxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QBChat-Redux";
+			};
+			name = Debug;
+		};
+		9B26FFA92369EDD400139826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77E79NGPCV;
+				INFOPLIST_FILE = "QBChat-ReduxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quickbirdstudios.blog.QBChat-ReduxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QBChat-Redux";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B26FF722369EDCD00139826 /* Build configuration list for PBXProject "QBChat-Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B26FF9F2369EDD400139826 /* Debug */,
+				9B26FFA02369EDD400139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B26FFA12369EDD400139826 /* Build configuration list for PBXNativeTarget "QBChat-Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B26FFA22369EDD400139826 /* Debug */,
+				9B26FFA32369EDD400139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B26FFA42369EDD400139826 /* Build configuration list for PBXNativeTarget "QBChat-ReduxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B26FFA52369EDD400139826 /* Debug */,
+				9B26FFA62369EDD400139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B26FFA72369EDD400139826 /* Build configuration list for PBXNativeTarget "QBChat-ReduxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B26FFA82369EDD400139826 /* Debug */,
+				9B26FFA92369EDD400139826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B26FF6F2369EDCD00139826 /* Project object */;
+}
