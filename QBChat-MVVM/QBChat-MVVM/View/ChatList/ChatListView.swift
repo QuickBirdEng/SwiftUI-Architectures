@@ -26,10 +26,8 @@ struct ChatListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.chats) { viewModel in
-                NavigationLink(destination: ChatDetailView()
-                    .environmentObject(viewModel)
-                    .environmentObject(KeyboardObserver.shared)) {
-                        ChatCell(chat: viewModel.state.chat)
+                NavigationLink(destination: ChatDetailView().environmentObject(viewModel)) {
+                    ChatCell(chat: viewModel.state.chat)
                 }
             }
             .navigationBarTitle("Chats")

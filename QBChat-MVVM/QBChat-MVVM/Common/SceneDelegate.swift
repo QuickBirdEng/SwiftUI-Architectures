@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewModel = AnyViewModel(ChatListViewModel(chatService: chatService))
         let contentView = ChatListView()
             .environmentObject(viewModel)
+            .environmentObject(KeyboardObserver.shared)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
