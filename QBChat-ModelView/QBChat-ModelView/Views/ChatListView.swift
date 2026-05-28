@@ -11,17 +11,22 @@ import SwiftUI
 struct ChatListView: View {
     let chatService: ChatService
 
+    @State private var chats: [Chat] = []
+
     var body: some View {
-        NavigationView {
-            List(chatService.fetchChats()) { chat in
+        NavigationStack {
+            List(chats) { chat in
                 NavigationLink(
                     destination: ChatDetailView(chat: chat,
-                                                chatService: self.chatService)
+                                                chatService: chatService)
                 ) {
                     ChatCell(chat: chat)
                 }
             }
-            .navigationBarTitle("Chats")
+            .navigationTitle("Chats")
+        }
+        .task {
+            chats = await chatService.fetchChats()
         }
     }
 

@@ -8,6 +8,9 @@
 
 import SwiftUI
 
+/// State rendered by `ChatListView`. `chats` is the array of type-erased
+/// detail view models — the list view model owns the lifetime of each detail
+/// view model, so navigating in and out of a chat preserves its state.
 struct ChatListState {
     var chats: [AnyViewModel<ChatDetailState, ChatDetailInput>]
 }
@@ -24,13 +27,13 @@ struct ChatListView: View {
     var viewModel: AnyViewModel<ChatListState, Never>
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(viewModel.chats) { viewModel in
                 NavigationLink(destination: ChatDetailView().environmentObject(viewModel)) {
                     ChatCell(chat: viewModel.state.chat)
                 }
             }
-            .navigationBarTitle("Chats")
+            .navigationTitle("Chats")
         }
     }
 

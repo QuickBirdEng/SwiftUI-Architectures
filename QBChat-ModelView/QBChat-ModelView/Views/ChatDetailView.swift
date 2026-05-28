@@ -14,31 +14,26 @@ struct ChatDetailView: View {
 
     let chatService: ChatService
 
-    @ObservedObject
-    var keyboardObserver = KeyboardObserver.shared
+    @State private var messages: [Message] = []
 
-    @State
-    private var newMessage = ""
+    @State private var newMessage = ""
 
-    var messages: [Message] {
-        chatService.fetchMessages().filter { $0.chatId == chat.id }
-    }
+    @FocusState private var inputFocused: Bool
 
     var body: some View {
         VStack {
             List(messages) { message in
                 MessageView(message: message,
-                            isMine: self.chatService.currentUser == message.sender)
+                            isMine: chatService.currentUser == message.sender)
             }
-            .onTapGesture { self.endEditing(force: true) }
+            .onTapGesture { inputFocused = false }
 
             Divider()
 
             HStack {
-                TextField(newMessage.isEmpty ? "New message" : newMessage,
-                          // This is because we need to update the UI because of a state change
-                          text: $newMessage,
-                          onCommit: sendMessage)
+                TextField("New message", text: $newMessage)
+                    .focused($inputFocused)
+                    .onSubmit(sendMessage)
 
                 Button(action: sendMessage) {
                     Text("Send")
@@ -46,9 +41,12 @@ struct ChatDetailView: View {
             }
             .padding([.leading, .top, .trailing])
         }
-        .padding(.bottom, keyboardObserver.height)
-        .navigationBarTitle(Text(chat.title), displayMode: .inline)
-        .animation(.easeInOut)
+        .navigationTitle(chat.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .animation(.easeInOut, value: messages.count)
+        .task(id: chat.id) {
+            await reloadMessages()
+        }
     }
 
 }
@@ -58,13 +56,17 @@ struct ChatDetailView: View {
 extension ChatDetailView {
 
     private func sendMessage() {
-        chatService.addMessage(newMessage, to: chat)
+        let content = newMessage
         newMessage = ""
+        Task {
+            await chatService.addMessage(content, to: chat)
+            await reloadMessages()
+        }
     }
 
-    private func endEditing(force: Bool) {
-        UIApplication.shared.windows
-            .forEach { $0.endEditing(force) }
+    private func reloadMessages() async {
+        messages = await chatService.fetchMessages()
+            .filter { $0.chatId == chat.id }
     }
 
 }

@@ -14,15 +14,15 @@ struct ChatListView: View {
     private var store: Store<AppState, AppAction>
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(store.state.chats) { chat in
                 NavigationLink(destination: ChatDetailView(chat: chat)) {
                     ChatCell(chat: chat)
                 }
             }
-            .navigationBarTitle("Chats")
+            .navigationTitle("Chats")
         }
-        .onAppear { self.store.send(.chatList(.reload)) }
+        .task { store.send(.chatList(.reload)) }
     }
 
 }

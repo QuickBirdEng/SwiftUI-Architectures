@@ -8,6 +8,10 @@
 
 import Foundation
 
+/// Top-level action dispatched into `Store<AppState, AppAction>`.
+///
+/// Actions are nested per scene so the root reducer can compose smaller
+/// per-scene handlers while the store still has a single root `Action` type.
 enum AppAction {
     case chatList(ChatListAction)
     case chatDetail(ChatDetailAction)

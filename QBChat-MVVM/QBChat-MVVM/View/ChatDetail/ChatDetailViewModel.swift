@@ -23,20 +23,26 @@ class ChatDetailViewModel: ViewModel {
         self.state = ChatDetailState(chat: chat,
                                      currentUser: chatService.currentUser,
                                      messages: [])
-        self.state.messages = fetchMessages()
-    }
-
-    func fetchMessages() -> [Message] {
-        chatService.fetchMessages()
-            .filter { $0.chatId == chat.id }
+        Task { @MainActor [weak self] in
+            await self?.reloadMessages()
+        }
     }
 
     func trigger(_ input: ChatDetailInput) {
         switch input {
         case .addMessage(let message):
-            chatService.addMessage(message, to: chat)
-            self.state.messages = fetchMessages()
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                await self.chatService.addMessage(message, to: self.chat)
+                await self.reloadMessages()
+            }
         }
+    }
+
+    @MainActor
+    private func reloadMessages() async {
+        state.messages = await chatService.fetchMessages()
+            .filter { $0.chatId == chat.id }
     }
 
 }

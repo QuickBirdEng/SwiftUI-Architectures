@@ -31,15 +31,15 @@ class MockChatService: ChatService {
         Message(id: UUID().uuidString, chatId: "6", date: Date(), sender: "Peter", content: "Hey guys! Do you have an idea what we can give Noah as a gift for his birthday?")
     ]
 
-    func fetchChats() -> [Chat] {
+    func fetchChats() async -> [Chat] {
         chats
     }
 
-    func fetchMessages() -> [Message] {
+    func fetchMessages() async -> [Message] {
         messages
     }
 
-    func addMessage(_ content: String, to chat: Chat) -> Message {
+    func addMessage(_ content: String, to chat: Chat) async -> Message {
         let message = Message(id: UUID().uuidString,
                               chatId: chat.id,
                               date: Date(),

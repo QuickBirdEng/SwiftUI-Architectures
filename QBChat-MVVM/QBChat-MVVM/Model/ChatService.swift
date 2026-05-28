@@ -8,11 +8,16 @@
 
 import Foundation
 
+/// The side-effect seam every architecture in this repo sits on top of.
+///
+/// All three variants (Model-View, Redux, ViewState MVVM) consume the same
+/// `ChatService` protocol. What differs between them is *where* and *how* the
+/// results of these methods are stored and exposed to views.
 protocol ChatService {
     var currentUser: String? { get }
-    func fetchChats() -> [Chat]
-    func fetchMessages() -> [Message]
+    func fetchChats() async -> [Chat]
+    func fetchMessages() async -> [Message]
 
     @discardableResult
-    func addMessage(_ content: String, to chat: Chat) -> Message
+    func addMessage(_ content: String, to chat: Chat) async -> Message
 }

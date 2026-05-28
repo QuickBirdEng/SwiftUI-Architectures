@@ -15,11 +15,11 @@ struct ChatDetailView: View {
     @EnvironmentObject
     private var store: Store<AppState, AppAction>
 
-    @EnvironmentObject
-    private var keyboardObserver: KeyboardObserver
-
     @State
     private var newMessage = ""
+
+    @FocusState
+    private var inputFocused: Bool
 
     init(chat: Chat) {
         self.chat = chat
@@ -29,14 +29,16 @@ struct ChatDetailView: View {
         VStack {
             List(store.state.messages(in: chat)) { message in
                 MessageView(message: message,
-                            isMine: self.store.state.currentUser == message.sender)
+                            isMine: store.state.currentUser == message.sender)
             }
-            .onTapGesture { self.endEditing(force: true) }
+            .onTapGesture { inputFocused = false }
 
             Divider()
 
             HStack {
-                TextField("New message", text: $newMessage, onCommit: sendMessage)
+                TextField("New message", text: $newMessage)
+                    .focused($inputFocused)
+                    .onSubmit(sendMessage)
 
                 Button(action: sendMessage) {
                     Text("Send")
@@ -44,9 +46,9 @@ struct ChatDetailView: View {
             }
             .padding([.leading, .top, .trailing])
         }
-        .padding(.bottom, keyboardObserver.height)
-        .navigationBarTitle(Text(chat.title), displayMode: .inline)
-        .animation(.easeInOut)
+        .navigationTitle(chat.title)
+        .navigationBarTitleDisplayMode(.inline)
+        .animation(.easeInOut, value: store.state.messages.count)
     }
 
 }
@@ -58,11 +60,6 @@ extension ChatDetailView {
     private func sendMessage() {
         store.send(.chatDetail(.add(newMessage, to: chat)))
         newMessage = ""
-    }
-
-    private func endEditing(force: Bool) {
-        UIApplication.shared.windows
-            .forEach { $0.endEditing(force) }
     }
 
 }
